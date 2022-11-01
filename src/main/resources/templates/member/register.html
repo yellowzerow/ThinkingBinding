@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>너와 나의 생각 엮기</title>
+</head>
+<body>
+	<h1>회원 가입</h1>
+	
+	<div th:replace="fragments/nav.html :: fragment-body-menu"></div>
+	
+		<form method="post">
+			
+			<div>
+				<label>
+					<input type="email" name="userId" placeholder="아이디 입력" required />
+				</label>
+			</div>
+			
+			<div>
+				<label>
+					<input type="text" name="userName" placeholder="이름 입력" required />
+				</label>
+			</div>
+			
+			<div>
+				<label>
+					<input type="text" name="nickName" placeholder="닉네임 입력" required />
+				</label>
+			</div>
+			
+			<div>
+				<label>
+					<input type="password" name="password" placeholder="비밀번호 입력" required />
+				</label>
+			</div>
+			<div>
+				<label>
+					<input type="password" name="rePassword" placeholder="비밀번호 입력 확인" required/>
+				</label>
+			</div>
+			
+			<div>
+				<button type="submit">회원 가입</button>
+			</div>
+		
+		</form>
+
+</body>
+</html>

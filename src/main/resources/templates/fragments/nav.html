@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8">
+	<title>너와 나의 생각 엮기</title>
+	
+</head>
+<body>
+	<header class="header">
+		<div th:fragment="fragment-body-menu" class="mainNav">
+			<div class="mainTitle">
+				<a href="/" class="header-title">
+					<span class="logo-subtitle1">너와 나의</span>
+					<span class="logo-title">생각 엮기</span>
+				</a>
+			</div>
+			<div class="category">
+				<ul class="mainMenu">
+					<li><a href="/">소개</a></li>
+					<li><a href="/">공지사항</a></li>
+					<li><a href="/">책장</a></li>
+					
+					<li><a href="/member/register">회원가입</a></li>
+					<li><a href="/member/login">로그인</a></li>
+					<li class="subMenu">
+						<a href="/" >마이페이지</a>
+						<ul class="slideMenu">
+							<li><a href="/" >내 프로필</a></li>
+							<li><a href="/" >구독하기</a></li>
+							<li><a href="/" >찜한 도서</a></li>
+							<li><a href="/" >회원 관리</a></li>
+							<li><a href="/" >카테고리 관리</a></li>
+							<li><a href="/" >도서 관리</a></li>
+							<li><a href="/member/logout">로그아웃</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
